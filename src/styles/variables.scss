@@ -1,0 +1,26 @@
+:root {
+  --bg-dark-blue: #282e3f;
+  --bg-gray: #343434;
+  --bg-light-gray: #f8f8f8;
+  --bg-light-gray2: #f8f8f8;
+  --border-light-gray: #e7e7e7;
+  --brand-color: hsl(176deg 43% 32%);
+  --brand-color-dark: hsl(176deg 43% 17%);
+  --brand-color-slightly-dark: hsl(176deg 43% 30%);
+  --brand-color-light: hsl(176deg 43% 46%);
+  --brand-color-light-accessible: hsl(176deg 43% 35%);
+  --brand-color-lighter: hsl(176deg 43% 86%);
+  --secondary-color: hsl(158deg 89% 37%);
+  /* alt brand color: 
+  --brand-color: hsl(328deg 73% 35%);
+  --brand-color-light: hsl(328deg 73% 46%);
+  */
+  --nav-background: var(--brand-color);
+  --nav-border: 2px solid var(--brand-color-light);
+  --shop-section-header-background: linear-gradient(
+    to right,
+    var(--brand-color),
+    var(--secondary-color)
+  );
+  // --shop-section-header-background: var(--brand-color);
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/200",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 1
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/201",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 2
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/202",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 3
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/203",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 4
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/204",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 5
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/205",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 6
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://picsum.photos/206",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 7
+  },
+  {
+    "name": "Aretes de ranita",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0237/7435/products/WhatsAppImage2022-07-20at1.48.39PM_2400x.jpg?v=1658345245",
+    "price": 99.0,
+    "section": "destacados",
+    "id": 8
+  }
+]
