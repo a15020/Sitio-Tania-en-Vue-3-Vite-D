@@ -51,9 +51,10 @@ console.log('ProductCard JavaScript loadad :D');
         </p>
         <p class="price">
           {{
-            product.price
-              .toLocaleString(undefined, { style: 'currency', currency: 'MXN' })
-              .replace('MX', '')
+            product.price.toLocaleString(undefined, {
+              style: 'currency',
+              currency: 'MXN',
+            })
           }}
         </p>
       </div>
