@@ -41,14 +41,17 @@ main > * > * {
 //   // margin-block: 0;
 // }
 
-.shop-section h2 {
-  // background: var(--shop-section-header-background);
-  color: white;
-  // padding-left: 2rem;
-  margin-inline: 0;
+.shop-section {
+  background-color: var(--bg-light-gray2);
+  h2 {
+    // background: var(--shop-section-header-background);
+    color: white;
+    // padding-left: 2rem;
+    margin-inline: 0;
 
-  &:not(.diagonal) {
-    background: var(--shop-section-header-background);
+    &:not(.diagonal) {
+      background: var(--shop-section-header-background);
+    }
   }
 }
 
@@ -57,8 +60,12 @@ section {
 }
 
 section {
-  padding-block: 3rem;
+  padding-bottom: 3rem;
   position: relative;
+}
+
+section:first-of-type {
+  padding-top: 1.5rem;
 }
 
 .diagonal {

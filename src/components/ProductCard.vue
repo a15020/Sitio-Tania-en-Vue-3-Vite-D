@@ -10,8 +10,15 @@ export default {
 
   mounted() {
     const img = document.querySelector('.product-image-' + this.product.id);
+    let fullscreen = false;
     img.addEventListener('click', (e) => {
-      img.requestFullscreen();
+      if (img.ariaExpanded === 'false') {
+        img.ariaExpanded = 'true';
+        img.requestFullscreen();
+      } else {
+        img.ariaExpanded = 'false';
+        document.exitFullscreen();
+      }
     });
   },
 
@@ -64,6 +71,7 @@ console.log('ProductCard JavaScript loadad :D');
   margin: 1rem;
   padding: 1rem;
   box-shadow: rgb(0 0 0 / 40%) 0rem 0rem 0.7rem 0rem;
+  background-color: #fff;
 
   img {
     object-fit: cover;
@@ -76,6 +84,7 @@ console.log('ProductCard JavaScript loadad :D');
 
     &:fullscreen {
       cursor: zoom-out;
+      object-fit: contain;
     }
   }
 }
@@ -85,6 +94,7 @@ console.log('ProductCard JavaScript loadad :D');
   flex-direction: column;
   justify-content: space-between;
   min-height: 19rem;
+  max-width: 20rem;
 }
 
 .scroll-button {

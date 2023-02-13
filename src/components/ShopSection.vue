@@ -1,11 +1,12 @@
 <script>
 import ProductCard from './ProductCard.vue';
 import storeProducts from '../assets/site-data/products.json';
+Object.freeze(storeProducts);
 
 export default {
   data() {
     return {
-      Products: [...storeProducts],
+      // Products: [...storeProducts],
     };
   },
 
@@ -13,47 +14,42 @@ export default {
 
   methods: {
     scrollRight() {
-      const destacadosCards = this.$refs.destacadosCards;
-      destacadosCards.scroll(destacadosCards.scrollLeft + window.innerWidth, 0);
+      const Cards = this.$refs.Cards;
+      Cards.scroll(Cards.scrollLeft + window.innerWidth, 0);
       console.log('scrolled right');
     },
     scrollLeft() {
-      const destacadosCards = this.$refs.destacadosCards;
-      destacadosCards.scroll(destacadosCards.scrollLeft - window.innerWidth, 0);
+      const Cards = this.$refs.Cards;
+      Cards.scroll(Cards.scrollLeft - window.innerWidth, 0);
       console.log('scrolled left');
     },
     handleScroll() {
-      const destacadosCards = this.$refs.destacadosCards;
+      const Cards = this.$refs.Cards;
       const productCardContainer = this.$refs.productCardContainer;
       const leftScroll = this.$refs.leftScroll;
       const rightScroll = this.$refs.rightScroll;
-      if (destacadosCards.scrollLeft > 20) {
+      if (Cards.scrollLeft > 20) {
         leftScroll.style.display = 'block';
-      } else if (destacadosCards.scrollLeft === 0) {
+      } else if (Cards.scrollLeft === 0) {
         leftScroll.style.display = 'none';
       }
-      if (
-        destacadosCards.scrollLeft + destacadosCards.offsetWidth >=
-        destacadosCards.scrollWidth - 40
-      ) {
+      if (Cards.scrollLeft + Cards.offsetWidth >= Cards.scrollWidth - 40) {
         rightScroll.style.display = 'none';
-      } else if (
-        destacadosCards.scrollLeft <
-        productCardContainer.offsetWidth - 40
-      ) {
+      } else if (Cards.scrollLeft < productCardContainer.offsetWidth - 40) {
         rightScroll.style.display = 'block';
       }
     },
   },
 
   mounted() {
-    this.$refs.destacadosCards.addEventListener('scroll', this.handleScroll);
+    this.$refs.Cards.addEventListener('scroll', this.handleScroll);
   },
 
   watch: {},
 
   props: {
-    msg: String,
+    Products: Array,
+    sectionName: String,
   },
 
   emits: ['response'],
@@ -66,7 +62,7 @@ export default {
   },
 
   unmounted() {
-    // this.$refs.destacadosCards.removeEventListener('scroll', this.handleScroll);
+    // this.$refs.Cards.removeEventListener('scroll', this.handleScroll);
   },
 };
 console.log(...storeProducts);
@@ -74,30 +70,30 @@ console.log(...storeProducts);
 
 // scroll thing
 /*
-const destacadosCards = document.querySelector('#destacados-cards');
+const Cards = document.querySelector('#destacados-cards');
 const rightScroll = document.querySelector('#scroll-right');
 const leftScroll = document.querySelector('#scroll-left');
 
 rightScroll.addEventListener('click', (e) => {
-  destacadosCards.scroll(destacadosCards.scrollLeft + window.innerWidth, 0);
+  Cards.scroll(Cards.scrollLeft + window.innerWidth, 0);
 });
 
 leftScroll.addEventListener('click', (e) => {
-  destacadosCards.scroll(destacadosCards.scrollLeft - window.innerWidth, 0);
+  Cards.scroll(Cards.scrollLeft - window.innerWidth, 0);
 });
 
-destacadosCards.addEventListener('scroll', (e) => {
-  if (destacadosCards.scrollLeft > 20) {
+Cards.addEventListener('scroll', (e) => {
+  if (Cards.scrollLeft > 20) {
     leftScroll.style.display = 'block';
-  } else if (destacadosCards.scrollLeft === 0) {
+  } else if (Cards.scrollLeft === 0) {
     leftScroll.style.display = 'none';
   }
   if (
-    destacadosCards.scrollLeft + destacadosCards.offsetWidth >=
-    destacadosCards.scrollWidth - 40
+    Cards.scrollLeft + Cards.offsetWidth >=
+    Cards.scrollWidth - 40
   ) {
     rightScroll.style.display = 'none';
-  } else if (destacadosCards.scrollLeft < destacadosCards.offsetWidth - 40) {
+  } else if (Cards.scrollLeft < Cards.offsetWidth - 40) {
     rightScroll.style.display = 'block';
   }
 });
@@ -105,9 +101,9 @@ destacadosCards.addEventListener('scroll', (e) => {
 </script>
 
 <template>
-  <section id="destacados" class="shop-section">
-    <h2 class="">Destacados</h2>
-    <div class="cards" id="destacados-cards" ref="destacadosCards">
+  <section :id="sectionName" class="shop-section">
+    <h2 class="">{{ sectionName }}</h2>
+    <div class="cards" :id="sectionName + '-cards'" ref="Cards">
       <button
         class="scroll-button"
         id="scroll-left"
@@ -151,5 +147,9 @@ destacadosCards.addEventListener('scroll', (e) => {
 .product-card-container {
   display: flex;
   align-items: stretch;
+}
+
+.shop-section h2 {
+  text-transform: capitalize;
 }
 </style>

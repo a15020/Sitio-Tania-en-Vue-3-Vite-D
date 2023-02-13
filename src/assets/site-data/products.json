@@ -1,10 +1,61 @@
 [
   {
+    "name": "Aretes de ranita",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0237/7435/products/WhatsAppImage2022-07-20at1.48.39PM_2400x.jpg?v=1658345245",
+    "price": 99.0,
+    "section": "animales",
+    "id": 8
+  },
+  {
+    "name": "Aretes de ranita 2",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0237/7435/products/WhatsAppImage2022-07-20at1.48.39PM_2400x.jpg?v=1658345245",
+    "price": 99.0,
+    "section": "animales",
+    "destacado": true,
+    "id": 9
+  },
+  {
+    "name": "Aretes de ranita 3",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0237/7435/products/WhatsAppImage2022-07-20at1.48.39PM_2400x.jpg?v=1658345245",
+    "price": 99.0,
+    "section": "animales",
+    "id": 10
+  },
+  {
+    "name": "Aretes de smores",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://m.media-amazon.com/images/I/41lIAmLm82L.jpg",
+    "price": 99.0,
+    "section": "comida",
+    "destacado": true,
+    "id": 11
+  },
+  {
+    "name": "Aretes de smores 2",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://m.media-amazon.com/images/I/41lIAmLm82L.jpg",
+    "price": 99.0,
+    "section": "comida",
+    "id": 12
+  },
+  {
+    "name": "Aretes de smores 3",
+    "description": "Lorem ipsum dolor sit amet",
+    "imageUrl": "https://m.media-amazon.com/images/I/41lIAmLm82L.jpg",
+    "price": 99.0,
+    "section": "comida",
+    "id": 13
+  },
+  {
     "name": "Lorem ipsum dolor",
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/200",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 1
   },
   {
@@ -12,7 +63,8 @@
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/201",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 2
   },
   {
@@ -20,7 +72,8 @@
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/202",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 3
   },
   {
@@ -28,7 +81,8 @@
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/203",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 4
   },
   {
@@ -36,7 +90,8 @@
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/204",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 5
   },
   {
@@ -44,7 +99,8 @@
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/205",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 6
   },
   {
@@ -52,15 +108,8 @@
     "description": "Lorem ipsum dolor sit amet",
     "imageUrl": "https://picsum.photos/206",
     "price": 99.0,
-    "section": "destacados",
+    "section": "otros",
+    "destacado": true,
     "id": 7
-  },
-  {
-    "name": "Aretes de ranita",
-    "description": "Lorem ipsum dolor sit amet",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0237/7435/products/WhatsAppImage2022-07-20at1.48.39PM_2400x.jpg?v=1658345245",
-    "price": 99.0,
-    "section": "destacados",
-    "id": 8
   }
 ]
