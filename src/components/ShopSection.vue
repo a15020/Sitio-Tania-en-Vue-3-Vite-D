@@ -1,64 +1,6 @@
 <script>
 import ProductCard from './ProductCard.vue';
 import storeProducts from '../assets/site-data/products.json';
-/*let storeProducts = [
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/200',
-    price: '99.00',
-    section: 'destacados',
-    id: '000001',
-  },
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/210',
-    price: '99.00',
-    section: 'destacados',
-    id: '000002',
-  },
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/220',
-    price: '99.00',
-    section: 'destacados',
-    id: '000003',
-  },
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/230',
-    price: '99.00',
-    section: 'destacados',
-    id: '000004',
-  },
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/240',
-    price: '99.00',
-    section: 'destacados',
-    id: '000005',
-  },
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/250',
-    price: '99.00',
-    section: 'destacados',
-    id: '000006',
-  },
-  {
-    name: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet',
-    imageUrl: 'https://picsum.photos/260',
-    price: '99.00',
-    section: 'destacados',
-    id: '000007',
-  },
-];*/
 
 export default {
   data() {
