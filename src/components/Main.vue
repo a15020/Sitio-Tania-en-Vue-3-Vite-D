@@ -1,6 +1,7 @@
 <script>
 import '../main.js';
 import ShopSection from './ShopSection.vue';
+import ShopSections from './ShopSections.vue';
 
 export default {
   data() {
@@ -118,6 +119,7 @@ export default {
     </section> -->
 
     <ShopSection></ShopSection>
+    <ShopSections></ShopSections>
   </main>
 
   <footer id="footer">
