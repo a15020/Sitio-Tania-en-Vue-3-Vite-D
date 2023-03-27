@@ -1,6 +1,6 @@
 import Home from '../App.vue';
 
-const aaa = '<p>aaa</p>';
+const aaa = { template: '<p>aaa</p>' };
 
 const routes = [
   { path: '/', name: 'Home', component: Home },

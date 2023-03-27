@@ -4,13 +4,13 @@ import App from './App.vue';
 
 console.log(router);
 
-createApp(App).mount('#app');
+const app = createApp(App);
 
 // Make sure to _use_ the router instance to make the
 // whole app router-aware.
-App.use(router);
+app.use(router);
 
-App.mount('#app');
+app.mount('#app');
 
 // Now the app has started!
 
@@ -22,7 +22,7 @@ const secondaryColorPicker = document.querySelector('#secondary-color-picker');
 /*
 --brand-color: hsl(176deg 43% 32%);
   --brand-color-dark: hsl(176deg 43% 17%);
-  --brand-color-slightly-dark: hsl(176deg 43% 30%);
+  --brand-color-slightly-dark: hsl(1756deg 43% 30%);
   --brand-color-light: hsl(176deg 43% 46%);
   --brand-color-light-accessible: hsl(176deg 43% 35%);
   --brand-color-lighter: hsl(176deg 43% 86%);
